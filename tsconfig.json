@@ -1,20 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES2020", /*编译版本目标*/
+    "target": "ESNext", /*编译版本目标*/
     "useDefineForClassFields": true, /*将 class 声明中的字段语义从 [[Set]] 变更到 [[Define]]*/
     "lib": [
-      "ES2020",
+      "ESNext",
       "DOM",
       "DOM.Iterable"
     ],
     "module": "ESNext", /*指定要使用模块标准*/
     "skipLibCheck": true,
+
     /* Bundler mode */
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": ".", /*工作根目录*/
@@ -31,6 +33,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
     "types": []
   },
   "include": [
@@ -39,6 +42,8 @@
     "src/**/*.tsx",
     "src/**/*.d.ts"
   ],
+  "exclude": [
+    "node_modules","dist",".git"],
   "references": [
     {
       "path": "./tsconfig.node.json"

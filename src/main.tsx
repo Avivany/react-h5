@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import '@/assets/css/index.css'
 import './utils/rem'
@@ -8,6 +8,8 @@ import App from './App.tsx'
 // document.getElementById('root')! 或者 document.getElementById('root') as HTMLElement 解决
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
+    <Suspense>
+      <App />
+    </Suspense>
+  </StrictMode>
 )

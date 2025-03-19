@@ -3,6 +3,7 @@
  */
 declare interface IResponse<T = unknown> {
   code: number;
+  msg?: string;
   message?: string;
   data: T;
   [key: string]: any;

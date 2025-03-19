@@ -1,0 +1,125 @@
+/**
+ * @file index.module.less
+ * @description: 登录
+ */
+ .login {
+  position:relative;
+  background-color:#fff;
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+
+  .content {
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:360px;
+    height:auto;
+    background-color:#fff;
+    border-radius:10px;
+    text-align:center;
+    padding:20px;
+     
+    .logoCont1{
+      margin:20px 0;
+
+      .logo {
+        height:60px;
+        width:auto;
+
+        img {
+          height:60px;
+          width:auto;
+        }
+      }
+      .title {
+        display:block;
+        box-sizing: border-box;
+        text-align:left;
+
+        h1 {
+          font-size: 32px;
+          font-weight: 700;
+          color: #333;
+          padding :10px 0;
+        }
+        p {
+          font-size: 14px;
+          color: #999;  
+        }
+      }
+    }
+
+    .item{
+      position: relative;
+      margin-bottom:20px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap: wrap;
+      font-size: 14px;
+      border-bottom: 1px solid #eee;
+
+      .label{
+        display:block;
+        width: 100%;
+        margin-right: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+        font-size:18px ;
+        font-weight: 600;
+        height: 32px;
+        line-height: 32px;
+      }
+      .input {
+        position: relative;
+        display:block;
+        width: 100%;
+        font-size: 14px;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 36px;
+        line-height: 36px;
+        .eye {
+          position: absolute;
+          right: 10px;
+          top:2px;
+          padding: 4px;
+          cursor: pointer;
+          svg {
+            display: block;
+          }
+        }
+        input{
+            height: 36px;
+            font-size: 16px;
+        }
+      }
+    }
+    .loginBtn {
+      width:100%;
+
+      .btn {
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+      }
+      .link {
+        display:flex;
+        justify-content: center;
+        font-size: 14px;
+        color:#999;
+
+        a {
+          color:#0a8aff
+        }
+
+      }
+    }
+
+  }
+ 
+
+ }

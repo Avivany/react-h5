@@ -1,0 +1,49 @@
+.mini-container {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  .mini-header {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+   nav {
+    display: flex;
+    justify-content: space-between;
+    height: 1.2rem;
+    width:100vw;
+    border-bottom: 0.8px solid #efefef;
+    box-shadow: 0 2px 1px  rgba(240,240,240,.2);
+    .mini-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.42rem;
+      width: 50%; 
+      text-align: center;
+      color: #333;
+    }
+    
+    }
+   
+  }
+  .min-body {
+    position: relative;
+    margin-top: 1.2rem;
+    padding-top: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    .min-body-box {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+
+}
+.active {
+  background-color:aquamarine
+}

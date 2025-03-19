@@ -42,3 +42,11 @@ export const del = <T=any,P=Record<string,any>>(url: string, params?: P,config?:
 }).then(res=>res?.data)
   .catch(err=>Promise.reject(err))
   } 
+
+  const $http = {
+    get,
+    post,
+    put,
+    del
+  }
+  export default $http
