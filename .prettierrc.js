@@ -1,0 +1,16 @@
+# 使用单引号
+singleQuote: true
+# 结尾使用分号
+semi: false
+# 每行最多100个字符
+printWidth: 100
+# 在多行分隔符时，尾随逗号
+trailingComma: none
+# 缩进2个空格
+tabWidth: 2
+# 使用tab缩进
+useTabs: false
+# jsx使用单引号
+jsxSingleQuote: true
+# 换行符
+endOfLine: 'lf'
