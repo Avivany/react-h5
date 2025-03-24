@@ -96,7 +96,7 @@ export default defineConfig(({mode}:ConfigEnv): UserConfig=>{
     },
     server:{
       host: '0.0.0.0',// 服务器主机名，如果允许外部访问，可设置为"0.0.0.0"
-      port: 5566,
+      port: 5060,
       open: false,
       cors:true,
       strictPort:false,
